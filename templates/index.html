@@ -1,0 +1,13 @@
+{% extends "site.html" %}
+
+{# Head for the home page #}
+{% block head %}
+  {{ super() }}
+  <meta name="description" content="{{ config.description }}">
+{% endblock head %}
+
+{# Body for the home page #}
+{% block body %}
+  {{ super() }}
+  {{ section.content | safe }}
+{% endblock body %}

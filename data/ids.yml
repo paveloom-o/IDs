@@ -1,0 +1,21 @@
+ids:
+  - name: "James T. Kirk"
+    adjectives:
+      negative:
+        - controlling
+        - defensive
+      neutral:
+        - decisive
+        - philosophical
+      positive:
+        - adaptable
+        - adventurous
+        - brave
+        - charming
+        - diplomatic
+        - joyful
+    assets:
+      videos:
+        - title: "Captain Kirk confronts Landru (machine)"
+          urls:
+            - https://www.youtube.com/watch?v=TAeN7GcsLdA

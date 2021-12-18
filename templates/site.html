@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+{# Other templates will extend the head #}
+<head>
+  {% block head %}
+    <base href="{{ config.base_url }}">
+    <meta charset="utf-8">
+    <meta name="author" content="{{ config.extra.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2285%22>🍂</text></svg>">
+    <link rel="stylesheet" href='site.css'>
+    <title>{{ config.title }}</title>
+    <style>
+      @font-face {
+          font-family: "Consolas Local";
+          src: url('fonts/Consolas Regular.ttf');
+          font-style: normal;
+          font-weight: normal;
+      }
+      @font-face {
+          font-family: "Consolas Local";
+          src: url('fonts/Consolas Bold.ttf');
+          font-weight: bold;
+      }
+      @font-face {
+          font-family: "Consolas Local";
+          src: url('fonts/Consolas Italic.ttf');
+          font-style: italic;
+          font-weight: normal;
+      }
+    </style>
+  {% endblock head %}
+</head>
+
+{# Other templates will override the body #}
+<body>
+  {% block body %}
+  {% endblock body %}
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+{% extends "site.html" %}
+
+{# Head for the 404 page #}
+{% block head %}
+  {{ super() }}
+  <meta http-equiv="refresh" content="0; URL=." />
+{% endblock head %}

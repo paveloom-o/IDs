@@ -1,0 +1,7 @@
+{% if page.title %}
+  {{ page.title }}
+{% elif section.title %}
+  {{ section.title }}
+{% else %}
+  {{ config.title }}
+{% endif %}
